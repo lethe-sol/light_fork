@@ -18,7 +18,7 @@ default = ["debug", "readonly"]
 test-sbf = []
 debug = []
 readonly = []
-
+idl-build = ["anchor-lang/idl-build"]
 [dependencies]
 light-concurrent-merkle-tree = { workspace = true, features = ["pinocchio"] }
 light-indexed-merkle-tree = { workspace = true, features = ["pinocchio"] }
@@ -29,6 +29,7 @@ borsh = { workspace = true }
 light-hasher = { workspace = true, features = ["pinocchio"] }
 light-macros = { workspace = true, features = ["pinocchio"] }
 light-merkle-tree-metadata = { workspace = true, features = ["pinocchio"] }
+anchor-lang = { version = "=0.31.1", features = ["idl-build"] }
 
 light-compressed-account = { workspace = true, features = ["pinocchio"] }
 light-verifier = { workspace = true, features = ["pinocchio"] }
