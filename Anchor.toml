@@ -11,10 +11,15 @@ startup_wait = 10_000
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "~/.config/solana/id.json"
 # --resolveJsonModule ./tsconfig.json 
 
-# [workspace]
-# types = "./js/stateless.js/src/idls"
-# idls = "./js/stateless.js/src/idls"
+[workspace]
+members = [
+  "programs/system",
+  # …other program folders…
+]
+
+[programs.devnet]           # or localnet, mainnet, etc.
+light-system-program-pinocchio = "6gEhFxTXp41MeTHdbvnV9YHxkWLtJfyzGa2N7Kx6fCHr"
