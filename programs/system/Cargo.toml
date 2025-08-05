@@ -18,6 +18,7 @@ default = ["debug", "readonly"]
 test-sbf = []
 debug = []
 readonly = []
+idl-build = ["anchor-lang/idl-build"]
 
 [dependencies]
 light-concurrent-merkle-tree = { workspace = true, features = ["pinocchio"] }
@@ -59,5 +60,3 @@ check-cfg = [
     'cfg(feature, values("frozen-abi", "no-entrypoint"))',
 ]
 
-[features]
-idl-build = ["anchor-lang/idl-build"]
