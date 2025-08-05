@@ -15,10 +15,9 @@ cluster = "devnet"
 wallet = "~/.config/solana/id.json"
 # --resolveJsonModule ./tsconfig.json 
 
-[workspace]
 members = [
   "programs/system",
-  # …other program folders…
+  "anchor-programs/system",    # ← add this line
 ]
 
 [programs.devnet]           # or localnet, mainnet, etc.
