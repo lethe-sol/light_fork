@@ -16,8 +16,6 @@ members = [
     "program-libs/zero-copy-derive",
     "programs/account-compression",
     "programs/system",
-    "programs/compressed-token",
-    "programs/registry",
     "anchor-programs/system",
     "sdk-libs/client",
     "sdk-libs/macros",
